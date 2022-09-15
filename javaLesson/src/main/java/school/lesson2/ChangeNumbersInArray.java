@@ -12,7 +12,7 @@ public class ChangeNumbersInArray {
                     n = 0;
                     break;
             }
-            System.out.print(n+" ");
+            System.out.print(n + " ");
         }
     }
 }

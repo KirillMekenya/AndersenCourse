@@ -17,7 +17,7 @@ public class Main {
         //task 1
         int a = random.nextInt(50);
         int b = random.nextInt(50);
-        System.out.println("a = " + a + " b = " + b+". Is sum "+(a+b)+" belongs to interval - from 10 to 20?");
+        System.out.println("a = " + a + " b = " + b + ". Is sum " + (a + b) + " belongs to interval - from 10 to 20?");
         System.out.println(checkSumBetweenBorders.checkSumInBorders(a, b));
         System.out.println();
 
@@ -38,7 +38,7 @@ public class Main {
 
         //task *
         int year = random.nextInt(2022);
-        System.out.println(year+" is leap? "+leapYearIdentify.isLeapYear(year));
+        System.out.println(year + " is leap? " + leapYearIdentify.isLeapYear(year));
         System.out.println();
 
         //task 5
@@ -76,14 +76,14 @@ public class Main {
 
         //task 8
         int[][] array3 = new int[10][10];
-        for (int i = 0; i<array3.length; i++) {
-            for (int j = 0; j<array3.length; j++) {
-                if (i==j || array3.length-i == j+1) {
+        for (int i = 0; i < array3.length; i++) {
+            for (int j = 0; j < array3.length; j++) {
+                if (i == j || array3.length - i == j + 1) {
                     array3[i][j] = 1;
                 } else {
                     array3[i][j] = 0;
                 }
-                System.out.print(array3[i][j]+" ");
+                System.out.print(array3[i][j] + " ");
             }
             System.out.println();
         }
@@ -93,9 +93,11 @@ public class Main {
         //task9
         int len = random.nextInt(40);
         int initialValue = random.nextInt(100);
-        System.out.println("Array length is "+len+", initial value is "+initialValue);
-        arrayParamReturn.returnArrayWithParams(initialValue, len);
+        System.out.println("Array length is " + len + ", initial value is " + initialValue);
+        for (int j :
+                arrayParamReturn.returnArrayWithParams(initialValue, len)) {
+            System.out.print(j + " ");
+        }
         System.out.println();
-
     }
 }
