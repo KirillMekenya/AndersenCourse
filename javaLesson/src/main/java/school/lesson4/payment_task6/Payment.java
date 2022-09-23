@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Payment {
 
-    private ArrayList<Good> goods;
+    private final ArrayList<Good> goods;
     private int paymentTotalPrice;
 
     public Payment(ArrayList<Good> goods) {

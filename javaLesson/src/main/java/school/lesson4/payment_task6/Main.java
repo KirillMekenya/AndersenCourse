@@ -20,7 +20,7 @@ public class Main {
         System.out.println("На карте осталось " + card.getBalance());
         System.out.println();
 
-        //Попытка оплатить ещё раз
+        //Попытка оплатить ещё раз при недостаточном кол-ве средств
         payment.payByCard(card);
         System.out.println("На карте осталось " + card.getBalance());
     }
