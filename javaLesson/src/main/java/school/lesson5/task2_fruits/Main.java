@@ -32,14 +32,14 @@ public class Main {
         System.out.println();
 
         System.out.println("Исходные коробки");
-        System.out.println(appleBox.getFruits().toString());
-        System.out.println(appleBox1.getFruits().toString());
+        System.out.println(appleBox.getFruits());
+        System.out.println(appleBox1.getFruits());
         System.out.println();
 
         System.out.println("Коробки после перемещения фруктов:");
         appleBox.moveFruitsToBox(appleBox1);
-        System.out.println(appleBox.getFruits().toString());
-        System.out.println(appleBox1.getFruits().toString());
+        System.out.println(appleBox.getFruits());
+        System.out.println(appleBox1.getFruits());
 
         //Аналогично работает и для апельсинов.
         orangeBox1.moveFruitsToBox(orangeBox);

@@ -11,6 +11,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return model+" speed: "+speed;
+        return model + " speed: " + speed;
     }
 }
