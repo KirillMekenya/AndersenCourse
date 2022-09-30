@@ -27,7 +27,7 @@ public class Main {
 
         try {
             System.out.println(array4x4.stringArray(arrayIsCorrect));
-        } catch (MyArraySizeException | MyArrayDataException e) {
+        } catch (MyArraySizeException | MyArrayDataException | IndexOutOfBoundsException e) {
             System.err.println(e.getMessage());
         }
     }

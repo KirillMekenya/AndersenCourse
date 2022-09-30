@@ -28,7 +28,7 @@ public class Array4x4 {
         return this;
     }
 
-    private void calculateSumOfElements() throws MyArrayDataException {
+    private void calculateSumOfElements() throws MyArrayDataException, IndexOutOfBoundsException {
         int[][] intArray = new int[4][4];
         int sum = 0;
         for (int i = 0; i < stringArray.length; i++) {
