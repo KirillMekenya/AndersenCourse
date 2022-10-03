@@ -20,7 +20,11 @@ public class Plate {
     }
 
     public void addFood(int amount) {
-        food += amount;
-        System.out.println("Тарелка пополнилась на " + amount + " еды");
+        if (amount > 0) {
+            food += amount;
+            System.out.println("Тарелка пополнилась на " + amount + " еды");
+        } else {
+            System.out.println("Нельзя пополнить на отрицательное число");
+        }
     }
 }

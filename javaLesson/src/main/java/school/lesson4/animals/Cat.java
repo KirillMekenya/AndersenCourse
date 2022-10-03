@@ -1,6 +1,6 @@
 package school.lesson4.animals;
 
-public class Cat extends Animal implements Runnable {
+public class Cat extends Animal implements Runnable, Swimmable {
     private static final int CAT_RUN_DISTANCE_LIMIT = 200;
     private static int catCount;
 
@@ -21,5 +21,9 @@ public class Cat extends Animal implements Runnable {
             System.out.println("Кот " + this.name + " не может пробежать " + distance + " метров, "
                     + this.name + " может пробежать максимум "+ CAT_RUN_DISTANCE_LIMIT +" метров");
         }
+    }
+
+    public void swim (int distance) {
+        System.out.println("Кот не умеет плавать");
     }
 }
