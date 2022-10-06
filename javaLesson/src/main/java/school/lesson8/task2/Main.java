@@ -18,7 +18,6 @@ public class Main {
         //не добавится
         phoneHandBook.addRecord(new Person("Kozlov"), "+31232134234");
 
-
         System.out.println(phoneHandBook.getPhone("Kozlov"));
         System.out.println(phoneHandBook.getPhone(person));
         System.out.println();

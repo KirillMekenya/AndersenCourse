@@ -7,12 +7,7 @@ public class PhoneHandBook {
     private final Map<String, Set<String>> personPhoneMap = new TreeMap<>();
 
     public void addRecord(Person person, String phoneNumber) {
-        if (personPhoneMap.containsKey(person.getSurname())) {
-            personPhoneMap.get(person.getSurname()).add(phoneNumber);
-        } else {
-            personPhoneMap.put(person.getSurname(), new HashSet<>());
-            personPhoneMap.get(person.getSurname()).add(phoneNumber);
-        }
+       personPhoneMap.computeIfAbsent(person.getSurname(), k -> new HashSet<>()).add(phoneNumber);
     }
 
     public String getPhone(String surname) {
@@ -33,5 +28,4 @@ public class PhoneHandBook {
         personPhoneMap.forEach((s, strings) -> stringBuilder.append(s).append(" : ").append(strings.toString()).append("\n"));
         return stringBuilder.toString();
     }
-
 }
